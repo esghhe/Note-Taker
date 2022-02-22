@@ -8,7 +8,7 @@ const { v4: uuidv4 } = require('uuid');
 module.exports = function (app) {
 
     // API GET Request
-    app.get("/api/notes", (request, response) => {
+    app.get("/api/notes", (_request, response) => {
         
         console.log("\n\nExecuting GET notes request");
 

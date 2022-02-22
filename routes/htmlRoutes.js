@@ -10,11 +10,11 @@ module.exports = function (app){
     // In each of the below cases the user is shown an HTML page of content
 
     
-    app.get('/notes', function(request, response) {
+    app.get('/notes', function(_request, response) {
         response.sendFile(path.join(__dirname, '../public/notes.html'));
     });
 
-    app.get('*', function(request, response) {
+    app.get('*', function(_request, response) {
         response.sendFile(path.join(__dirname, '../public/index.html'));
     });
 };
